@@ -1,0 +1,130 @@
+.container_0 {
+  display: none;
+  flex-direction: row;
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid rgba(0, 0, 0, 0.187) 0.1px;
+}
+/*=========================== */
+/* container_1,container_3 <<< generalização  */
+.container_1,
+.container_3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: auto;
+  width: auto;
+}
+/*=========================== */
+/* container_1  */
+.container_1 div,
+.container_3 div {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.049);
+  margin: auto;
+  border-radius: 50%;
+}
+.container_1 div img,
+.container_3 div img {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+/*=========================== */
+/* container_2  */
+.container_2 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.container_2 h1 {
+  font-size: 7mm;
+  margin: auto;
+}
+/*=========================== */
+/* container_3  */
+.container_3 div img {
+  height: 60%;
+  width: auto;
+}
+/* animation: rotacao 3s forwards;
+  animation-fill-mode: forwards; */
+.animacao_rotate_inverse {
+  animation: rotacao_inverse 2s forwards;
+  animation-fill-mode: forwards;
+}
+.animacao_rotate {
+  animation: rotacao 1s forwards;
+  animation-fill-mode: forwards;
+}
+/*=========================== */
+/* animação css */
+@keyframes rotacao {
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotacao_inverse {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.disable_box {
+  display: none;
+}
+/*=========================== */
+.dropMenu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.088);
+  height: auto;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 3.5mm;
+  border-bottom: solid rgba(0, 0, 0, 0.127) 0.1px;
+}
+.dropMenu h2 {
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+  margin: 8px 0;
+  margin-right: 0;
+  width: 200px;
+  border-bottom: solid black 0.1px;
+}
+.dropMenu h2:hover {
+  transform: scale(110%);
+}
+/*=========================== */
+/* responsividades  */
+@media (max-width: 800px) {
+  .dropMenu {
+    display: flex;
+  }
+  .container_0 {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+  }
+}
+
+/* . */
+@media (max-width: 590px) {
+  .container_1 div,
+  .container_3 div {
+    height: 60px;
+    width: 60px;
+  }
+}

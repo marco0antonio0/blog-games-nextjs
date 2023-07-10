@@ -1,0 +1,206 @@
+.container_0 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/*============================================================ */
+.titulo_container_0 {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+}
+/*============================================================ */
+.titulo_container_0 img {
+  filter: opacity(80%);
+  margin-right: 10px;
+}
+/*============================================================ */
+
+.titulo_container_0 h2 {
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: auto 0;
+  border-bottom: solid rgba(0, 0, 0, 0.7) 4px;
+}
+/*============================================================ */
+/*============================================================ */
+.titulo_container_0 div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-left: 30px;
+}
+.titulo_container_0 div h2 {
+  border: solid rgba(0, 0, 0, 0.145) 0.1px;
+  border-radius: 20px;
+  border-bottom: none;
+  box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  background-color: rgba(255, 255, 255, 0.283);
+  cursor: pointer;
+  user-select: none;
+}
+.titulo_container_0 div h2:hover {
+  box-shadow: 0px 10px 30px 15px rgba(0, 0, 0, 0.1);
+}
+/*============================================================ */
+.BTN_moreGames {
+  margin: 20px auto;
+}
+.BTN_moreGames h2 {
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.792);
+}
+.BTN_moreGames h2:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 10px 30px 26px rgba(0, 0, 0, 0.1);
+}
+/*============================================================ */
+.rowCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin: auto;
+  gap: 40px;
+  margin-top: 15px;
+}
+/*============================================================ */
+.disable {
+  display: none;
+}
+.opacity_box {
+  filter: opacity(80%);
+}
+.card_in {
+  border: solid rgba(0, 0, 0, 0.197) 0.1px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 30%;
+  flex-direction: column;
+}
+.card_in:hover {
+  box-shadow: 0px 10px 15px 16px rgba(0, 0, 0, 0.1);
+}
+.image_card,
+.content_card,
+.image_card img {
+  width: 100%;
+  height: auto;
+}
+.image_card img {
+  transform: scale(105%);
+}
+.image_card {
+  overflow: hidden;
+}
+.card_in:hover img {
+  transform: scale(115%);
+}
+
+.content_card h1 {
+  font-size: 7mm;
+  padding: 0 30px;
+  margin: 7px 0;
+}
+.content_card h3 {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0 0 20px 30px;
+  margin: 0;
+}
+/*============================================================ */
+/* ajustes de responsividade da tela */
+@media (max-width: 1500px) {
+  .content_card h1 {
+    font-size: 6mm;
+  }
+  .content_card h3 {
+    font-size: 4.5mm;
+  }
+}
+/*===================================== */
+@media (max-width: 1400px) {
+  .content_card h1 {
+    font-size: 5mm;
+  }
+  .content_card h3 {
+    font-size: 3.5mm;
+  }
+}
+/*===================================== */
+@media (max-width: 1250px) {
+  .rowCards {
+    gap: 25px;
+  }
+  .content_card h1 {
+    font-size: 4.5mm;
+  }
+  .content_card h3 {
+    font-size: 3.5mm;
+  }
+}
+/*===================================== */
+@media (max-width: 1000px) {
+  .card {
+    width: 45%;
+  }
+  .BTN_moreGames h2 {
+    font-size: 5.5mm;
+  }
+}
+/*===================================== */
+@media (max-width: 800px) {
+  .BTN_moreGames h2 {
+    font-size: 5mm;
+  }
+  .titulo_container_0 h2 {
+    font-size: 6mm;
+  }
+  .card {
+    width: 46%;
+  }
+  .content_card h1 {
+    padding: 0 0 0 20px;
+    margin: 0px 0;
+  }
+  .content_card h3 {
+    padding: 0 0 15px 20px;
+  }
+}
+/*===================================== */
+@media (max-width: 750px) {
+  .BTN_moreGames h2 {
+    font-size: 4.5mm;
+  }
+}
+/*===================================== */
+@media (max-width: 370px) {
+  .content_card {
+    justify-content: space-between;
+  }
+  .card {
+    width: 45%;
+  }
+}

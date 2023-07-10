@@ -1,0 +1,140 @@
+.container_0 {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  gap: 20px;
+}
+.container_left {
+  background-color: rgba(255, 255, 255, 0.068);
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.container_left img {
+  width: 100%;
+  height: auto;
+}
+.container_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.container_right h1 {
+  font-weight: 500;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container_right h3 {
+  color: rgba(0, 0, 0, 0.589);
+}
+.container_right p {
+  margin-top: 0;
+}
+.container_right h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.container_right div {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+.container_right div img {
+  user-select: none;
+  cursor: pointer;
+  margin: auto;
+  width: auto;
+  height: 130%;
+  margin-top: -10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: solid rgba(0, 0, 0, 0.077) 0.1px;
+  max-width: 70px;
+  max-height: 70px;
+}
+.fillterOn {
+  filter: grayscale(70%);
+}
+.animacao_like {
+  animation: anima 2s;
+}
+@keyframes anima {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(115%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+.btn_push {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.btn_push h4 {
+  user-select: none;
+  padding: 20px 50px;
+  margin: auto;
+  box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.1);
+}
+.btn_push:hover h4 {
+  transform: scale(109%);
+}
+@media (max-width: 1200px) {
+  .container_left {
+    width: 600px;
+  }
+}
+@media (max-width: 1050px) {
+  .container_left {
+    width: 600px;
+  }
+  .container_right h2 {
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 970px) {
+  .container_0 {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .container_left {
+    width: 100%;
+  }
+  .container_right div img {
+    height: 70px;
+  }
+  .container_right div {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 790px) {
+  .container_0 {
+    gap: 0;
+  }
+  .container_right h1 {
+    font-size: 7mm;
+  }
+  .container_right h3 {
+    font-size: 4.5mm;
+  }
+  .container_right h2 {
+    font-size: 6mm;
+  }
+}

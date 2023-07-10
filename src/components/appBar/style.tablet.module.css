@@ -1,0 +1,116 @@
+.container_0 {
+  display: none;
+  flex-direction: row;
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid rgba(0, 0, 0, 0.187) 0.1px;
+}
+/*=========================== */
+/* container_1,container_3 <<< generalização  */
+.container_1,
+.container_3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: auto;
+  width: auto;
+}
+/*=========================== */
+/* container_2  */
+.container_2 {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.container_2 h1 {
+  margin: auto;
+  margin-left: 50px;
+}
+/*=========================== */
+/* container_1  */
+.container_1 {
+  /* background-color: bisque; */
+  flex: 2;
+}
+.container_1 div {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.container_1 div h3 {
+  cursor: pointer;
+  user-select: none;
+  margin: auto;
+  margin-left: 100px;
+}
+/*=========================== */
+/* container_3  */
+.container_3 div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: auto;
+  margin: auto;
+  background-color: black;
+  padding: 0 40px;
+  border-radius: 15px;
+}
+.container_3 div:hover {
+  box-shadow: 0px 10px 15px 17px rgba(0, 0, 0, 0.1);
+}
+.container_3 div h3 {
+  user-select: none;
+  margin: auto;
+  color: white;
+}
+.container_3 div div {
+  margin: auto;
+  padding: 0;
+  padding-left: 5px;
+  width: auto;
+  height: 50%;
+}
+/*  */
+
+/*=========================== */
+/* responsividades  */
+@media (max-width: 1200px) {
+  .container_0 {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+  }
+  .container_1 div h3 {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 950px) {
+  .container_0 {
+    height: 100px;
+  }
+  .container_3 div h3 {
+    font-size: 4mm;
+  }
+  .container_3 div {
+    padding: 0 30px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container_1 div h3 {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .container_0 {
+    display: none;
+  }
+}
