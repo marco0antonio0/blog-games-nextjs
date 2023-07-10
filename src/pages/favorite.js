@@ -3,7 +3,6 @@ import Widget_appBar from "@/components/appBar/widget";
 import { createContext, useEffect, useState } from "react";
 import Widget_RowCards_mode_4 from "@/components/rowCards/mode_4";
 
-export const Appdesafio = createContext(null);
 export default function Home() {
   //============================================
 

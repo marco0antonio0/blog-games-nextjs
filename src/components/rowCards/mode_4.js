@@ -8,62 +8,23 @@ export default function Widget_RowCards_mode_4() {
   //==========================================================================
   const [cont_index, set_cont_index] = useState(6);
   const [data_get, setdata_get] = useState([]);
+  const [load, set_load] = useState(false);
   //==========================================================================
   useEffect(() => {
-    try {
-      if (data_get.length == 0) {
-        setdata_get(Op__storage.fn_get());
-        console.log(data_get);
-        console.log("passei aquiiii");
+    if (!load) {
+      try {
+        if (data_get.length == 0) {
+          setdata_get(Op__storage.fn_get());
+          set_load(true);
+        }
+      } catch (error) {
+        setdata_get([]);
+        console.log(error);
       }
-    } catch (error) {
-      setdata_get([]);
     }
   });
   //==========================================================================
   var data = [
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
-    {
-      titulo: "aaaaaa",
-      publisher: "aaaa",
-      platform: "aaaaa",
-      thumbnail11: "",
-      id: "",
-    },
     {
       titulo: "aaaaaa",
       publisher: "aaaa",
