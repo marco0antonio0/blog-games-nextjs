@@ -2,7 +2,7 @@
 
 ![img](/images_readme/gitImage.png)
 
-"Este é o README do projeto Git para o seu site inspirado no Dribbble, onde os usuários podem explorar e favoritar jogos. O objetivo deste documento é fornecer informações sobre o projeto, suas características e como executá-lo."
+Este é o README do projeto Git para o seu site inspirado no Dribbble, onde os usuários podem explorar e favoritar jogos. O objetivo deste documento é fornecer informações sobre o projeto, suas características e como executá-lo."
 
 ## Descrição do Projeto
 
@@ -61,7 +61,7 @@ Isso iniciará o servidor e você poderá acessar o site em seu navegador atrav�
 
 Desenvolvedor: Marco Antonio
 
-![img](/images_readme/icon_get_to.png)
+[![img](/images_readme/icon_get_to.png)](https://www.linkedin.com/in/marco-antonio-aa3024233)
 
 ## status
 
