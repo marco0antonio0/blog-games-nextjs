@@ -27,6 +27,11 @@
 .container_2 h1 {
   margin: auto;
 }
+.container_2 img {
+  margin: auto;
+  width: auto;
+  height: 90%;
+}
 /*=========================== */
 /* container_1  */
 .container_1 div {

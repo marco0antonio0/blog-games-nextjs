@@ -40,7 +40,7 @@ function Layout_pc() {
         {/*==================================================== */}
         {/* container_2 */}
         <div className={`${style.container_2}`}>
-          <h1>Play Games</h1>
+          <img src="/images/logo.png" alt="" />
         </div>
         {/*==================================================== */}
         {/* container_3 */}
@@ -49,7 +49,7 @@ function Layout_pc() {
           onClick={() => r.push("/favorite")}
         >
           <div>
-            <h3>favoritos</h3>
+            <h3>favorite</h3>
             <div>
               <img src="/images/icon_coracao.png" alt="" />
             </div>
@@ -70,7 +70,7 @@ function Layout_tablet() {
         {/*==================================================== */}
         {/* container_2 */}
         <div className={`${style_1.container_2}`}>
-          <h1>Play Games</h1>
+          <img src="/images/logo.png" alt="" />
         </div>
         {/*==================================================== */}
         {/* container_1 */}
@@ -93,7 +93,7 @@ function Layout_tablet() {
           onClick={() => r.push("/favorite")}
         >
           <div>
-            <h3>favoritos</h3>
+            <h3>favorite</h3>
             <div>
               <img src="/images/icon_coracao.png" alt="" />
             </div>
@@ -126,7 +126,7 @@ function Layout_smartphne() {
         {/*==================================================== */}
         {/* container_2 */}
         <div className={`${style_2.container_2}`}>
-          <h1>Play Games</h1>
+          <img src="/images/logo.png" alt="" />
         </div>
         {/*==================================================== */}
         <div className={style_2.container_3}>

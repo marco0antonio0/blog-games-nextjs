@@ -29,6 +29,12 @@
   margin: auto;
   margin-left: 50px;
 }
+.container_2 img {
+  margin: auto;
+  width: auto;
+  height: 80%;
+  margin-left: 20px;
+}
 /*=========================== */
 /* container_1  */
 .container_1 {

@@ -49,6 +49,11 @@
   font-size: 7mm;
   margin: auto;
 }
+.container_2 img {
+  margin: auto;
+  width: auto;
+  height: 78%;
+}
 /*=========================== */
 /* container_3  */
 .container_3 div img {
