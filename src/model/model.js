@@ -43,5 +43,3 @@ export var Op__storage = {
     localStorage.setItem("data", JSON.stringify({ data }));
   },
 };
-
-// "a4f32c96b1mshc586751ffdc965fp1ea512jsn57c13588ebcd"
