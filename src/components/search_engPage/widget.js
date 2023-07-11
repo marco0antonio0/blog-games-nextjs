@@ -31,12 +31,9 @@ export default function Widget_Search_eng() {
   const fn_push = (seach) => {
     const resultado = buscaLinear(data, seach);
     if (resultado) {
-      console.log("Encontrado:", resultado);
       set_data_search(resultado);
     } else {
-      console.log("Nenhum resultado encontrado.");
     }
-    console.log("paaaaa");
   };
   return (
     <>
