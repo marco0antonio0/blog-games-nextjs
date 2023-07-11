@@ -6,7 +6,7 @@ import { buscaLinear } from "@/model/controller";
 import { useRouter } from "next/router";
 export default function Widget_Search_eng_1() {
   const [data, set_data] = useState([]);
-  const [seach, set_seach] = useState([]);
+  const [seach, set_seach] = useState("");
   const [load, set_load] = useState(false);
   const r = useRouter();
   //===========================================================
@@ -23,14 +23,9 @@ export default function Widget_Search_eng_1() {
   });
   //===========================================================
   const fn_push = (seach) => {
-    // const resultado = buscaLinear(data, seach);
-    // if (resultado) {
-    //   console.log("Encontrado:", resultado);
-    //   set_data_search(resultado);
-    // } else {
-    //   console.log("Nenhum resultado encontrado.");
-    // }
-    r.push("/search?name=" + seach);
+    if (seach && seach.trim().length > 0) {
+      r.push("/search?name=" + seach);
+    }
   };
   return (
     <>

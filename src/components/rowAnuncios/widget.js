@@ -25,7 +25,9 @@ export default function Widget_RowAnuncio() {
           <img
             src="/images/icon_app_2.png"
             alt=""
-            onClick={() => r.push("https://github.com/marco0antonio0")}
+            onClick={() =>
+              r.push("https://github.com/marco0antonio0/blog-games-nextjs")
+            }
           />
         </div>
         <div className={`${style.container_0_2} `}>

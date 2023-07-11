@@ -1,21 +1,31 @@
 import Head from "next/head";
 import Widget_appBar from "@/components/appBar/widget";
-import { createContext, useContext, useEffect, useState } from "react";
-import Widget_RowCards_mode_5 from "@/components/rowCards/mode_5";
-import Widget_Search_eng from "@/components/search_engPage/widget";
+import { createContext, useEffect, useState } from "react";
+import Widget_RowCards_mode_1 from "@/components/rowCards/mode_1";
+import Widget_RowCards_mode_2 from "@/components/rowCards/mode_2";
+import Widget_RowCards_mode_3 from "@/components/rowCards/mode_3";
+import Widget_RowAnuncio from "@/components/rowAnuncios/widget";
+import Widget_Search_eng_1 from "@/components/search_engPage/widget_1";
 import Widget_BottomBar from "@/components/infoBottom/bottomBar";
-export const Buscador = createContext(null);
-
+import Widget_Page_notFound from "@/components/NotFound/widget";
+export const Appdesafio = createContext(null);
 export default function Home() {
-  const [data_eng, set_data_eng] = useState("");
-  const [data_search, set_data_search] = useState([]);
+  const [data_RowCards, setdata_RowCards] = useState([]);
+  const [data_category, setdata_category] = useState(false);
+  const [data_genre, setdata_genre] = useState("");
+  const [data_plataform, setplataform] = useState("all");
+
+  //============================================
+
+  //============================================
   return (
     <>
       {/*=================================================== */}
       <Head>
-        <title>Search Game</title>
-        <meta name="description" content="procure seu melhor jogo" />
+        <title>Pagina não encontrada</title>
+        <meta name="description" content="Play games blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -93,24 +103,21 @@ export default function Home() {
         />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <Buscador.Provider
-        value={{ data_eng, set_data_eng, data_search, set_data_search }}
-      >
-        <div className="colunm">
+
+      <div className="colunm">
+        {/*=================================================== */}
+        <Widget_appBar />
+        {/*=================================================== */}
+        {/*=================================================== */}
+        <div className="container_person">
           {/*=================================================== */}
-          <Widget_appBar />
           {/*=================================================== */}
-          <div className="container_person">
-            {/*=================================================== */}
-            <Widget_Search_eng />
-            <Widget_RowCards_mode_5 />
-            {/*=================================================== */}
-            <Widget_BottomBar />
-          </div>
-          {/*===================================== */}
-          {/*===================================== */}
+          <Widget_Page_notFound />
+          <Widget_BottomBar />
         </div>
-      </Buscador.Provider>
+        {/*===================================== */}
+        {/*===================================== */}
+      </div>
     </>
   );
 }

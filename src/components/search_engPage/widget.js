@@ -23,9 +23,7 @@ export default function Widget_Search_eng() {
         set_data(e);
         set_seach(name);
         const resultado = buscaLinear(e, name);
-        // console.log(resultado);
         set_data_search(resultado);
-        // console.log(name);
       });
     }
   });

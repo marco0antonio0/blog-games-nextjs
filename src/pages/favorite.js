@@ -2,6 +2,7 @@ import Head from "next/head";
 import Widget_appBar from "@/components/appBar/widget";
 import { createContext, useEffect, useState } from "react";
 import Widget_RowCards_mode_4 from "@/components/rowCards/mode_4";
+import Widget_BottomBar from "@/components/infoBottom/bottomBar";
 
 export default function Home() {
   //============================================
@@ -96,14 +97,14 @@ export default function Home() {
         {/*=================================================== */}
         <Widget_appBar />
         {/*=================================================== */}
-        {/*=================================================== */}
         <div className="container_person">
           {/*=================================================== */}
           <Widget_RowCards_mode_4 />
           {/*=================================================== */}
-          {/*=================================================== */}
-          {/*=================================================== */}
+          <Widget_BottomBar />
         </div>
+        {/*===================================== */}
+        {/*===================================== */}
       </div>
     </>
   );

@@ -12,6 +12,7 @@ A página principal do site separa os jogos por categoria e os lista utilizando 
 
 ![img](/images_readme/image_readme_1.png)
 Os jogadores têm a opção de favoritar os jogos que mais gostarem. A página de favoritos exibe todos os jogos que o usuário adicionou aos favoritos até o momento. Além disso, os jogadores também podem desfavoritar os jogos, caso desejem. O site permite que o usuário retorne à página de pesquisa para explorar mais jogos.
+![img](/images_readme/image_readme_2.png)
 
 O projeto foi desenvolvido utilizando o Next.js, um framework baseado em React para a criação de aplicativos web. Para fins de teste, foi utilizada a API RapidAPI para a obtenção dos dados necessários.
 
@@ -41,10 +42,10 @@ cd <NOME DO DIRETÓRIO>
 npm install
 ```
 
-5. Crie um arquivo .env na raiz do projeto com as seguintes variáveis de ambiente:
+5. Crie um arquivo .env na raiz do projeto com as seguintes variáveis de ambiente: siga o env-example localizado na raiz do projeto e renomei de ".env"
 
 ```
-NEXT_PUBLIC_SECRET_KEY=<chave_key_api>
+NEXT_PUBLIC_SECRET_KEY = <chave_key_api>
 ```
 
 Para mais informações em: [https://www.freetogame.com/api-doc](https://www.freetogame.com/api-doc)

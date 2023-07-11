@@ -5,9 +5,8 @@ import Widget_RowCards_mode_1 from "@/components/rowCards/mode_1";
 import Widget_RowCards_mode_2 from "@/components/rowCards/mode_2";
 import Widget_RowCards_mode_3 from "@/components/rowCards/mode_3";
 import Widget_RowAnuncio from "@/components/rowAnuncios/widget";
-import Widget_Search from "@/components/search/widget";
-import Widget_Search_eng from "@/components/search_engPage/widget";
 import Widget_Search_eng_1 from "@/components/search_engPage/widget_1";
+import Widget_BottomBar from "@/components/infoBottom/bottomBar";
 export const Appdesafio = createContext(null);
 export default function Home() {
   const [data_RowCards, setdata_RowCards] = useState([]);
@@ -123,14 +122,19 @@ export default function Home() {
           <div className="container_person">
             {/*=================================================== */}
             <Widget_Search_eng_1 />
+            {/*===================================== */}
             <Widget_RowAnuncio />
+            {/*===================================== */}
             <Widget_RowCards_mode_2 />
+            {/*===================================== */}
             <Widget_RowCards_mode_3 />
+            {/*===================================== */}
             <Widget_RowCards_mode_1 />
             {/*=================================================== */}
-            {/*=================================================== */}
-            {/*=================================================== */}
+            <Widget_BottomBar />
           </div>
+          {/*===================================== */}
+          {/*===================================== */}
         </div>
       </Appdesafio.Provider>
     </>

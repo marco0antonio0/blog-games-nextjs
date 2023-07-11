@@ -2,6 +2,7 @@ import Head from "next/head";
 import Widget_appBar from "@/components/appBar/widget";
 import { createContext, useEffect, useState } from "react";
 import Widget_page_game from "@/components/page_game/widget";
+import Widget_BottomBar from "@/components/infoBottom/bottomBar";
 export const Appdesafio = createContext(null);
 export default function Home() {
   return (
@@ -97,7 +98,10 @@ export default function Home() {
           {/*=================================================== */}
           <Widget_page_game />
           {/*=================================================== */}
+          <Widget_BottomBar />
         </div>
+        {/*===================================== */}
+        {/*===================================== */}
       </div>
     </>
   );

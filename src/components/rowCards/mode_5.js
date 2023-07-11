@@ -37,26 +37,6 @@ export default function Widget_RowCards_mode_5() {
               })
             : null}
         </div>
-        {/* <div
-          className={`${style.BTN_moreGames} ${
-            data_RowCards.length < cont_index ? style.opacity_box : null
-          }`}
-        >
-          <h2
-            onClick={() =>
-              set_cont_index((e) => {
-                var qtd = data_RowCards.length - e;
-                if (qtd > 6) {
-                  return e + 6;
-                } else {
-                  return qtd + e;
-                }
-              })
-            }
-          >
-            more +
-          </h2>
-        </div> */}
       </div>
     </>
   );
@@ -93,5 +73,4 @@ const Card_Data = ({
     </>
   );
 };
-
 //==========================================================================
