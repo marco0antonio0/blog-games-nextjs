@@ -16,7 +16,7 @@ export var Get_request = {
   options: {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "a4f32c96b1mshc586751ffdc965fp1ea512jsn57c13588ebcd",
+      "X-RapidAPI-Key": process.env.NEXT_PUBLIC_SECRET_KEY,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
   },
@@ -43,3 +43,5 @@ export var Op__storage = {
     localStorage.setItem("data", JSON.stringify({ data }));
   },
 };
+
+// "a4f32c96b1mshc586751ffdc965fp1ea512jsn57c13588ebcd"
