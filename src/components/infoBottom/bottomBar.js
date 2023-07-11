@@ -8,8 +8,8 @@ export default function Widget_BottomBar() {
           <div>
             <h1>Play games</h1>
             <p>
-              Site Play Games Diversão garantida com jogos incríveis! Explore e
-              divirta-se com a melhor seleção de jogos.
+              Play Games: Guaranteed fun with amazing games! Explore and have a
+              great time with the best selection of games.
             </p>
           </div>
         </div>
@@ -17,11 +17,10 @@ export default function Widget_BottomBar() {
           <div>
             <h1>{"<DEV>"}</h1>
             <p>
-              Ola me chamo marco, desenvolvi esse site para estudar e
-              desenvolver melhor minhas habilidades de progamação e
-              desenvolvimento
+              Hello, my name is Marco. I developed this website to study and
+              enhance my programming and development skills.
             </p>
-            <h1 className={style.person}>{"<DEV />"}</h1>
+            <h1 className={style.person}>{"</DEV>"}</h1>
           </div>
         </div>
       </div>
