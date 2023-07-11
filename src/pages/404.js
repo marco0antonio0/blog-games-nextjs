@@ -22,8 +22,8 @@ export default function Home() {
     <>
       {/*=================================================== */}
       <Head>
-        <title>Pagina não encontrada</title>
-        <meta name="description" content="Play games blog" />
+        <title>Page not found</title>
+        <meta name="description" content="Page searched not found" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <link

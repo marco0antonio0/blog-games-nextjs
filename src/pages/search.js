@@ -14,7 +14,7 @@ export default function Home() {
       {/*=================================================== */}
       <Head>
         <title>Search Game</title>
-        <meta name="description" content="procure seu melhor jogo" />
+        <meta name="description" content="Find your best game" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
