@@ -32,8 +32,8 @@ export default function Widget_Search_eng_1() {
       {" "}
       <div className={style.container_0}>
         <h1>
-          Encontre seus <br />
-          games favoritos
+          Find your <br />
+          favorite games
         </h1>
         <div className={style.container_00}>
           <div className={style.div_search}>
